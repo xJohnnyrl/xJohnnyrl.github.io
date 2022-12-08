@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Justice</title>
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./css/our.scss">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Volkhov&display=swap&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navbar">
+            <div class="top-nav">
+                    <div class="logo-container">
+                        <a href="#" class="logo">
+                            <img src="/Resources/Images/Air_Justice_v.3-1.webp" alt="air-justice-logo">
+                        </a>
+                    </div>
+                    <div class="hamburger-container">
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <div class="full-nav">
+                <div class="full-menu">
+                    <ul class="menu">
+                        <li><a href="#">WHO WE ARE</a></li>
+                        <li><a href="#">WHY IT MATTERS</a></li>
+                        <li><a href="#">OUR STORIES</a></li>
+                        <li><a href="#">ACT NOW</a></li>
+                    </ul>
+                </div>
+                <div class="socials-nav">
+                    <ul class="socials-menu">
+                        <li> <a href="#">FACEBOOK </a></li>
+                        <li> <a href="#">INSTAGRAM </a></li>
+                        <li> <a href="#">YOUTUBE </a></li>
+                        <li> <a href="#">airjusticelou@gmail.com </a></li>
+                        <li> <a href="#">502-509-4790 </a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <header class="title">
+        <div class="title-image"></div>
+        <div class="title-text">
+            <h1>OUR STORIES</h1>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-1">
+                <div class="video-wrapper">
+                    <video src="./Resources/Videos/our-stories-1.mp4" class="carousel-vid" disablePictureInPicture autoplay loop muted controls></video>
+                    <div class="overlay"></div>
+                    <button class="video-button"><a href="https://express.adobe.com/page/dLMA8BGHJ5Rgu/" class="button-text" target="_blank">Learn More</a></button>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="btn btn-outline-primary"></button>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-2">
+                <div class="video-wrapper">
+                    <video src="./Resources/Videos/our-stories-2.mp4" class="carousel-vid" disablePictureInPicture autoplay loop muted controls></video>
+                    <div class="overlay"></div>
+                    <button class="video-button"><a href="https://express.adobe.com/page/FO48wMjV62Xoh/" class="button-text" target="_blank">Learn More</a></button>
+                </div>
+            </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="search">
+            <fieldset class="field-container">
+                <input type="text" placeholder="Search..." class="field" />
+                <div class="icons-container">
+                  <div class="icon-search"></div>
+                  <div class="icon-close">
+                    <div class="x-up"></div>
+                    <div class="x-down"></div>
+                  </div>
+                </div>
+              </fieldset>
+        </div>
+        <div class="blogs">
+            <div class="blog-1">
+                <a class="asp-embed-link" href="https://express.adobe.com/page/dLMA8BGHJ5Rgu/" target="_blank">
+                    <img src="https://express.adobe.com/page/dLMA8BGHJ5Rgu/embed.jpg?buster=1670015145475" alt="living with asthma" style="width:100%" border="0"/></a>
+                </a>
+            </div>
+            <div class="blog-2">
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer-container" data-scroll-section="">
+        <div class="footer">
+            <div class="footer-email-form">
+                <h2>Join our news letter</h2>
+                <input type="email" id="footer-email" placeholder="Enter your email adress">
+                <input type="submit" id="footer-email-btn" value="Sign Up">
+            </div>
+            <div class="footer-heading footer-2">
+                <a href="#">502-509-4790</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+                <a href="#">airjusticelou@gmail.com </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./navbar/navbar.js"></script>
+    <script id="asp-embed-script" data-zindex="1000000" type="text/javascript" charset="utf-8" src="https://express.adobe.com/page-embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/our.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            cssMode: true,
+            direction: 'horizontal',
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true,
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }
+          });
+    </script>
+</body>
+</html>

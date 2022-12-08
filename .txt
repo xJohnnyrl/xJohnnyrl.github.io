@@ -1,0 +1,178 @@
+.navigation {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+.navbar {
+    font-family: 'Source Sans Pro', sans-serif;   
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    height: 11%;
+    transition: height 1s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar .logo{
+        float: left;
+        padding-left: 2vw;
+        max-height: 50px;
+        z-index: 2;
+}
+
+.navbar .logo img {
+    height: auto;
+    max-height: 100px;
+    padding-bottom: 0;
+}
+
+.hamburger-circle {
+    height: 100%;
+    width: 10rem;
+    float: right;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 20;
+
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    left: 95%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: black;
+    border-radius: 5px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: #008000;
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -1px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px);
+}
+
+.hamburger.is-active:hover span {
+    background-color: #008000;
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-2px, 1px) rotate(-45deg);
+}
+
+.full-nav {
+    position: absolute;
+    transition: 1s ease-in-out;
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+
+}
+
+.full-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50%;
+}
+
+.socials-menu li {
+   row-gap: 110px;
+}
+.socials-menu li a {
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+}
+
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 5rem;
+    transition: .3s ease-out;
+}
+
+.menu li a:hover {
+    color: #008000;
+    transition: .3s ease-out;
+}
+
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(1px, -3px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px);
+}
+
+.hamburger.is-active:hover span {
+    background-color: #008000;
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-1px, 2px) rotate(-45deg);
+}
+
+
+.navbar.is-active {
+}
+
+.full-nav.is-active {
+}
+
+
+transform: translateY(-100%);
+
+
+
+
+    font-family: 'Bebas Neue', cursive;
+
+
+
+                <li class="slide "></li>
+                <li class="slide "></li>
+                <li class="slide "></li>
+                <li class="slide "></li>

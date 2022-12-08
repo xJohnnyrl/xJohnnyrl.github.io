@@ -1,0 +1,530 @@
+.title {
+    max-width: 100vw;
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.title-image {
+    margin: 0;
+    width: 100vw;
+    height: 45vh;
+    position: absolute;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6012780112044818) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 100%), url(/who-we-are-heading.1377536c.webp);
+    background-position: right 0px bottom -500px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.title-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.title-text h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+    color: #61c67a;
+}
+
+.quote {
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    height: 60vh;
+    max-width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    position: relative;
+}
+
+.quote > * {
+    flex-basis: 100%;
+}
+
+.right-quote {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.right-quote-text-container::before {
+    content: '';
+    display: block;
+    width: 98%;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 1rem;
+}
+
+.right-quote-text-container {
+    margin-top: 12rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+
+.right-quote-text-container p{
+    font-size: 1rem;
+    font-family: 'Volkhov', cursive;
+    margin: 1rem;
+}
+
+.left-quote {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/quote.02064922.webp);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    background-repeat: none;
+}
+
+.quote-text {
+    position: absolute;
+    background-color: white;
+    height: 14vh;
+    width: 50vw;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px 0;
+    left: 60%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.quote-text {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.meet-team {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6012780112044818) 0%, rgba(0,0,0,0.80015756302521) 50%, rgba(0,0,0,0.9654236694677871) 100%), url(/meet-team-background.0940d855.webp);
+    background-size: cover;
+    height: 150vh;
+    display: block;
+    backdrop-filter: grayscale(1) opacity(1);
+}
+
+.team-title {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.team-title h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+}
+
+.team-container {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.team-wrapper {
+    list-style: none;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding: 0 7rem 0 7rem;
+    column-gap: 8rem;
+    row-gap: -1rem;
+    justify-content: center;
+}
+
+.team-wrapper li {
+    height: 25rem;
+    width: 20rem;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    padding: 1rem;
+    transition: 0.4s ease-in-out;
+}
+
+.team-wrapper li h2 {
+    margin-bottom: .5rem;
+}
+
+.team-wrapper li h3 {
+    margin-bottom: .5rem;
+}
+
+.team-wrapper li:nth-child(1){
+    background-image: linear-gradient(0deg, rgba(0,85,81,1) 0%, rgba(0,85,81,0) 40%, rgba(0,212,255,0) 100%), url("/Keisha Dorsey.7065cb41.webp");
+    background-position: top center;
+    background-size: cover;
+}
+
+.team-wrapper li:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,85,81,1) 0%, rgba(0,85,81,0) 40%, rgba(0,212,255,0) 100%), url("/react.9190f1f2.webp");
+    background-position: top center;
+    background-size: cover;
+}
+
+.team-wrapper li:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,85,81,1) 0%, rgba(0,85,81,0) 40%, rgba(0,212,255,0) 100%), url("/Poole.add3c8a1.webp");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.team-wrapper li:nth-child(4){
+    background-image: linear-gradient(0deg, rgba(0,85,81,1) 0%, rgba(0,85,81,0) 40%, rgba(0,212,255,0) 100%), url("/abigal.863e5268.webp");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.team-wrapper li:nth-child(5){
+    background-image: linear-gradient(0deg, rgba(0,85,81,1) 0%, rgba(0,85,81,0) 40%, rgba(0,212,255,0) 100%), url("/shavonnie.43a6c434.webp");
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
+}
+
+.team-wrapper li:hover {
+    scale: 1.2;
+}
+
+.team-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    color: black;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.team-button:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    color: #005551;
+}
+
+.students {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+.students h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.students button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    color: black;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.students button:hover {
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+    color: #005551;
+}
+
+.principles {
+    height: 50vh;
+    max-width: 100vw;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    display: flex;
+}
+
+.principles > * {
+    flex-basis: 100%;
+}
+
+.principles-title {
+    position: absolute;
+    background-color: white;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.principles-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+}
+
+.principles-section{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.principles-section-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/empowerement.b7005a36.webp);
+    background-size: cover;
+}
+
+.principles-section-2 {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.principles-section-2::before {
+    content: '';
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.principles-section-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/access.a9e44eee.webp);
+    background-position: left center;
+    background-position-x: -100px;
+    background-size: cover;
+}
+
+.principles-section h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.principles-section h2:after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.principles-section p {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.sponsors {
+    height: 35vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: 5rem 12.5rem;
+    grid-template-areas: 
+    "title title title"
+    "logo-1 logo-2 logo-3"
+    ;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    column-gap: 5rem;
+}
+
+.sponsors-title {
+    grid-area: title;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.logo-1 {
+    grid-area: logo-1;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.logo-2 {
+    grid-area: logo-2;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.modal {
+    width: 70vw;
+    height: 70vh;
+    border: none;
+    margin: auto;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.modal::backdrop {
+    backdrop-filter: blur(5px);
+    opacity: 0;
+}
+
+.modal[open] {
+    animation: fade-in 500ms forwards;
+    animation: slide-up 500ms forwards;
+}
+
+.modal[open]::backdrop {
+    animation: fade-in 500ms forwards;
+}
+
+.modal[closing] {
+    display: block;
+    pointer-events: none;
+    inset: 0;
+    animation: slide-down 500ms forwards;
+    animation: fade-out 500ms forwards;
+}
+
+.modal[closing]::backdrop {
+    animation: fade-out 500ms forwards;
+}
+
+.modal div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.modal-button {
+    position: absolute;
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    left: 95%;
+    top: 5%;
+}
+
+.modal div .modal-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+.modal div .modal-button span:nth-child(1) {
+    transform: translate(-2px, -9px) rotate(45deg);
+}
+
+.modal div .modal-button span:nth-child(2) {
+    transform: translate(-4px, 3px) rotate(-45deg);
+}
+
+.modal div .modal-button:hover span{
+    transition: .3s ease-in-out;
+    background-color: #005551;
+}
+
+.modal div .modal-photo {
+    padding: 2rem;
+    position: relative;
+
+}
+
+.modal div .modal-photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+.modal div .modal-text {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.modal div .modal-text .modal-text-wrapper {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    height: auto;
+    transform: translateY(-50%);
+    padding: 1rem;
+}
+
+.modal div .modal-text .modal-text-wrapper h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.modal div .modal-text .modal-text-wrapper p {
+    font-size: 1.3rem;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-down {
+    100% {
+      transform: translateY(100%);
+    }
+    0% {
+      transform: translateY(0%);
+    }
+  }
+  
+
+
+/*# sourceMappingURL=/who.b0e5dda9.css.map */

@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.title-image {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6012780112044818) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 100%), url(/act-now-header.e7db6a55.webp);
+    background-position: left bottom;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.title-text h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4rem;
+}
+
+.title-buttons-wrapper {
+  display: inline-block;
+}
+.btn {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+  
+  --button-text-color: var(--background-color);
+  --button-text-color-hover: var(--button-background-color);
+  --border-color: #7D8082;
+  --button-background-color: #ece8e1;
+  --highlight-color: #005551;
+  --button-inner-border-color: transparent;
+  --button-bits-color: var(--background-color);
+  --button-bits-color-hover: var(--button-background-color);
+  
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .5s ease;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0; left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid var(--border-color);
+  transition: all .5s ease;
+}
+
+.btn::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.btn::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn:active::before,
+.btn:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.btn:active::before {
+  top: 3px;
+}
+
+.btn:active::after {
+  bottom: 3px;
+}
+
+.btn__inner {
+  position: relative;
+  display: block;
+  padding: 20px 30px;
+  background-color: var(--button-background-color);
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+
+.btn__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: var(--button-bits-color);
+}
+
+.btn__inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0; bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: var(--button-bits-color);
+  transition: all .5s ease;
+}
+
+.btn__slide {
+  display: block;
+  position: absolute;
+  top: 0; bottom: -1px; left: -8px;
+  width: 0;
+  background-color: var(--highlight-color);
+  transform: skew(-15deg);
+  transition: all .5s ease;
+}
+
+.btn__content {
+  position: relative;
+}
+
+.btn__content a {
+  color: black;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.btn:hover .btn__content a{
+  color: white;
+}
+
+.btn:hover {
+  color: var(--button-text-color-hover);
+}
+
+.btn:hover .btn__slide {
+  width: calc(100% + 15px);
+}
+
+.btn:hover .btn__inner::after {
+  background-color: var(--button-bits-color-hover);
+}
+
+.btn-middle {
+  margin: 0 2rem 0 2rem;
+}
+
+#odor {
+  height: 40vh;
+  background-color: #ece8e1;
+}
+
+#concern {
+  height: 40vh;
+  background-color: black;
+}
+
+#story {
+  height: 40vh;
+  background-color: #005551;
+}
+
+/*# sourceMappingURL=/act-now.c9b8a54c.css.map */

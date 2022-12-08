@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-family: 'Source Sans Pro', sans-serif;   
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    height: 11%;
+    transition: height 1s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+/*# sourceMappingURL=/navbar.d5b09e6b.css.map */

@@ -1,0 +1,49 @@
+    <!-- Slider main container -->
+    <section class="carousel">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide-1">
+                <video src="./Resources/Videos/our-stories-1.mp4" class="carousel-vid" disablePictureInPicture autoplay loop muted controls></video>
+            </div>
+            <div class="swiper-slide">
+                <video src="./Resources/Videos/our-stories-2.mp4" class="carousel-vid" disablePictureInPicture autoplay loop muted controls></video>
+            </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="search">
+            <label class="search-blog">
+                <input type="text" required class="search-blog-text">
+                    <ul>
+                      <li s>s</li>
+                      <li e>e</li>
+                      <li a>a</li>
+                      <li r>r</li>
+                      <li c>c</li>
+                      <li h>h</li>
+                    </ul>
+            </label>
+        </div>
+        <div class="blogs">
+            <div class="blog-1">
+                <a class="asp-embed-link" href="https://express.adobe.com/page/dLMA8BGHJ5Rgu/" target="_blank">
+                    <img src="https://express.adobe.com/page/dLMA8BGHJ5Rgu/embed.jpg?buster=1670015145475" alt="living with asthma" style="width:100%" border="0"/></a>
+                </a>
+            </div>
+            <div class="blog-2">
+
+            </div>
+        </div>
+    </section>

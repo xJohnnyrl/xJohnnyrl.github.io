@@ -1,0 +1,331 @@
+$hint: #FAF8F8;
+$turqoise: #17EAD9;
+$cornflower-blue: #005551;
+$tundora: #4B4848;
+$electric-violet: #7C26F8;
+$snappy:  cubic-bezier(0.694,  0.048, 0.335, 1.000);
+$snappy:  cubic-bezier(0.694,  0.048, 0.335, 1.000);
+
+.title {
+  max-width: 100vw;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.title-image {
+  margin: 0;
+  width: 100vw;
+  height: 45vh;
+  position: absolute;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.6012780112044818) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 100%), url(../Resources/Images/our-stories-heading.webp);
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.title-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.title-text h1 {
+  font-size: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel {
+  max-width: 100vw;
+  max-height: 80vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 6rem;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.6012780112044818) 0%, rgba(0,0,0,0.80015756302521) 50%, rgba(0,0,0,0.9654236694677871) 100%), url(../Resources/Images/our-stories-video-background.webp);
+  background-size: cover;
+}
+
+.swiper {
+  width: 50%;
+  height: 60vh;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+}
+
+.text-overlay h1 {
+  font-size: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    pointer-events: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #005551;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #ffffff !important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 2rem !important;
+}
+
+.video-button {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    color: black;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    z-index: 3;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-text {
+  text-decoration: none;
+  color: black;
+}
+
+.blog {
+  background-color: rgb(20, 20, 20);
+  height: 90vh;
+  max-width: 100vw;
+  padding: 5rem;
+}
+
+.search {
+  width: 30%;
+  margin: auto;
+  height: 6%;
+}
+
+.field-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.6);
+}
+
+.icons-container {
+  position: absolute;
+  top: 6%;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.icon-close {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75%;
+  height: 75%;
+  opacity: 0;
+  cursor: pointer;
+  transform: translateX(-200%);
+  border-radius: 50%;
+  transition: opacity 0.25s ease, transform 0.43s $snappy;
+  &:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: 2px solid transparent;
+    border-top-color: $cornflower-blue;
+    border-left-color: $cornflower-blue;
+    border-bottom-color: $cornflower-blue;
+    transition: opacity 0.2s ease;
+  }
+  .x-up {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 3px;
+      width: 50%;
+      height: 2px;
+      background-color: $cornflower-blue;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0px;
+      width: 50%;
+      height: 2px;
+      background-color: $cornflower-blue;
+      transform: rotate(-45deg);
+    }
+  }
+  .x-down {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      width: 50%;
+      height: 2px;
+      background-color: $cornflower-blue;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 1px;
+      width: 50%;
+      height: 2px;
+      background-color: $cornflower-blue;
+      transform: rotate(45deg);
+    }
+  }
+  .is-type & {
+    &:before {
+      opacity: 1;
+      animation: spin 0.85s infinite;
+    }
+    .x-up {
+      &:before, &:after {
+        animation: color-1 0.85s infinite;
+      }
+      &:after {
+        animation-delay: 0.3s;
+      }
+    }
+    .x-down {
+      &:before, &:after {
+        animation: color-1 0.85s infinite;
+      }
+      &:before {
+        animation-delay: 0.2s;
+      }
+      &:after {
+        animation-delay: 0.1s;
+      }
+    }
+  }
+}
+
+.icon-search {
+  position: relative;
+  top: 5px;
+  left: 8px;
+  width: 50%;
+  height: 50%;
+  opacity: 1;
+  border-radius: 50%;
+  border: 3px solid mix($cornflower-blue, white, 35%);
+  transition: opacity 0.25s ease, transform 0.43s $snappy;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    right: -2px;
+    width: 4px;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    height: 10px;
+    background-color: mix($cornflower-blue, white, 35%);
+  }
+}
+
+.field {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgba($tundora, 0.1);
+  transition: all 0.4s ease;
+  &:focus {
+    outline: none;
+    box-shadow: 0px 9px 20px rgba($tundora, 0.3);
+    + .icons-container {
+      .icon-close {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .icon-search {
+        opacity: 0;
+        transform: translateX(200%);
+      }
+    }
+  }
+}
+
+.blogs {
+  height: 70vh;
+  display: flex;
+  padding: 8rem 5rem;
+
+}
+
+.blog-1 {
+  width: 28%;
+  position: absolute;
+}
